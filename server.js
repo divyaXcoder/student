@@ -151,3 +151,6 @@ app.get('/api/questions/:subjectId', (req, res) => {
   
   res.json(randomizedOutput);
 });
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🛰️ Master Question Bank online on port: ${PORT}`);
+});
